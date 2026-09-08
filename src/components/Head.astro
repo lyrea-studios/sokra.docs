@@ -1,0 +1,9 @@
+---
+const route = Astro.locals.starlightRoute;
+// GitHub Pages serves one error file at any missing path. It has no canonical
+// guide or translated equivalents at /404/, /de/404/, or /es/404/.
+const head = route.head.filter(({ tag, attrs }) =>
+  route.id !== '404' || tag !== 'link' || !['canonical', 'alternate'].includes(String(attrs?.rel))
+);
+---
+{head.map(({ tag: Tag, attrs, content }) => <Tag {...attrs} set:html={content} />)}

@@ -6,9 +6,15 @@ interface Props {
   src: ImageMetadata;
   alt: string;
   caption: string;
+  lang?: 'en' | 'de' | 'es';
 }
 
-const { src, alt, caption } = Astro.props;
+const { src, alt, caption, lang = 'en' } = Astro.props;
+const labels = {
+  en: { open: 'Open full-size screenshot', size: 'View full size' },
+  de: { open: 'Screenshot in voller Größe öffnen', size: 'In voller Größe ansehen' },
+  es: { open: 'Abrir captura a tamaño completo', size: 'Ver a tamaño completo' },
+}[lang];
 // Astro's dev file URL needs the same base path as the docs server.
 const fullSizeSrc = import.meta.env.DEV && src.src.startsWith('/@fs/')
   ? `${import.meta.env.BASE_URL.replace(/\/$/, '')}${src.src}`
@@ -16,12 +22,12 @@ const fullSizeSrc = import.meta.env.DEV && src.src.startsWith('/@fs/')
 ---
 
 <figure class="product-screenshot">
-  <a href={fullSizeSrc} aria-label={`Open full-size screenshot: ${alt}`}>
+  <a href={fullSizeSrc} aria-label={`${labels.open}: ${alt}`}>
     <Image src={src} alt={alt} loading="lazy" format="webp" quality={90} />
   </a>
   <figcaption>
     {caption}{' '}
-    <a href={fullSizeSrc}>View full size</a>
+    <a href={fullSizeSrc}>{labels.size}</a>
   </figcaption>
 </figure>
 

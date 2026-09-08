@@ -1,12 +1,12 @@
 {
-  "name": "@sokra/docs",
+  "name": "@lyrea/docs",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "astro dev --host 127.0.0.1",
     "check": "astro check",
-    "build": "astro build && node scripts/check-site.mjs",
+    "build": "astro build && node scripts/check-site.mjs && node scripts/check-locales.mjs",
     "preview": "astro preview --host 127.0.0.1",
     "check:app-links": "node scripts/check-app-links.mjs"
   },
@@ -19,5 +19,7 @@
     "typescript": "^5.9.3",
     "parse5": "^8.0.0"
   },
-  "engines": { "node": ">=22.12.0" }
+  "engines": {
+    "node": ">=22.12.0"
+  }
 }

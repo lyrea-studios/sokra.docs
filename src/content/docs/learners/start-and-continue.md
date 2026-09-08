@@ -18,7 +18,7 @@ Opening an activity overview does not start the lesson on its own.
 
 Return to the same assigned activity with the same account. Use **Continue** when it is offered to return to your work.
 
-Before leaving, wait for any answer submission in progress to finish. If Sokra shows a save or connection error, follow it before closing the page.
+Before leaving, wait for any answer submission in progress to finish. If Lyrea shows a save or connection error, follow it before closing the page.
 
 ## If you cannot start
 

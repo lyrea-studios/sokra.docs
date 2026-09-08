@@ -17,43 +17,44 @@ export default defineConfig({
     '/schools/workspaces-and-spaces/': '/workspaces/workspaces-and-spaces/',
   }).map(([from, to]) => [from, siteUrl.pathname.replace(/\/$/, '') + to])),
   integrations: [starlight({
-    title: 'Sokra Docs',
-    description: 'Clear guides for learning, training, and teaching with Sokra.',
+    title: { en: 'Lyrea Docs', de: 'Lyrea Handbuch', es: 'Guías de Lyrea' },
+    description: 'Clear guides for learning, training, and teaching with Lyrea.',
     defaultLocale: 'root',
-    locales: { root: { label: 'English', lang: 'en' } },
+    locales: { root: { label: 'English', lang: 'en' }, de: { label: 'Deutsch', lang: 'de' }, es: { label: 'Español', lang: 'es' } },
     logo: { src: './src/assets/logo.png', replacesTitle: false },
     favicon: '/favicon-32x32.png',
     customCss: ['./src/styles/custom.css'],
-    social: [{ icon: 'external', label: 'Open Sokra', href: 'https://app.sokra.io' }],
+    components: { Head: './src/components/Head.astro', LanguageSelect: './src/components/LanguageSelect.astro' },
+    social: [{ icon: 'external', label: 'Lyrea', href: 'https://app.sokra.io' }],
     sidebar: [
-      { label: 'Start here', items: [
-        { label: 'Welcome', slug: '' },
+      { label: 'Start here', translations: { de: 'Erste Schritte', es: 'Primeros pasos' }, items: [
+        { label: 'Welcome', translations: { de: 'Willkommen', es: 'Bienvenida' }, slug: '' },
         { slug: 'start/quick-start' },
         { slug: 'start/sign-in' },
       ] },
-      { label: 'Create and share', items: [
+      { label: 'Create and share', translations: { de: 'Erstellen und teilen', es: 'Crear y compartir' }, items: [
         { slug: 'activities/create-activity' },
         { slug: 'activities/preview-and-publish' },
         { slug: 'activities/assign-activity' },
         { slug: 'activities/review-progress' },
         { slug: 'activities/materials' },
       ] },
-      { label: 'Learn', items: [
+      { label: 'Learn', translations: { de: 'Lernen', es: 'Aprender' }, items: [
         { slug: 'learners/start-and-continue' },
         { slug: 'learners/get-help' },
       ] },
-      { label: 'Workspaces', items: [
+      { label: 'Workspaces', translations: { de: 'Workspaces', es: 'Espacios de trabajo' }, items: [
         { slug: 'workspaces/workspaces-and-spaces' },
         { slug: 'workspaces/modes' },
         { slug: 'workspaces/account-and-settings' },
       ] },
-      { label: 'Use Sokra in your setting', items: [
+      { label: 'Use Lyrea in your setting', translations: { de: 'Lyrea in deinem Umfeld', es: 'Lyrea en tu entorno' }, items: [
         { slug: 'modes/school' },
         { slug: 'modes/enterprise' },
         { slug: 'modes/higher-education' },
         { slug: 'modes/personal' },
       ] },
-      { label: 'Help', items: [{ slug: 'help/troubleshooting' }] },
+      { label: 'Help', translations: { de: 'Hilfe', es: 'Ayuda' }, items: [{ slug: 'help/troubleshooting' }] },
     ],
   })],
 });

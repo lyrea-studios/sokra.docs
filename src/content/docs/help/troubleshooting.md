@@ -6,7 +6,7 @@ Start with the message shown in the app. It often tells you what to do next.
 
 ## I cannot sign in
 
-Use the same email and sign-in method you used before. For an organization login, ask your organization admin. For an email-and-password account, use password reset. See [Sign in to Sokra](../../start/sign-in/).
+Use the same email and sign-in method you used before. For an organization login, ask your organization admin. For an email-and-password account, use password reset. See [Sign in to Lyrea](../../start/sign-in/).
 
 ## My workspace, space, or activity is missing
 

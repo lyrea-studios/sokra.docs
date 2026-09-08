@@ -2,7 +2,7 @@
 title: Personal Workspace
 description: Shape your own goals, practice, and progress review.
 ---
-Sokra's personal mode is called **Workspace**. It gives self-directed learning its own terms and starting settings: your goals, your practice, and your progress.
+Lyrea's personal mode is called **Workspace**. It gives self-directed learning its own terms and starting settings: your goals, your practice, and your progress.
 
 ## Start with your goal
 
@@ -22,6 +22,6 @@ An author preview is separate from real learning work. To build on saved progres
 
 ## Review your progress
 
-Read the feedback and look at what you can now do with and without help. Choose another practice step or revise the goal. You set the direction; Sokra supports the work.
+Read the feedback and look at what you can now do with and without help. Choose another practice step or revise the goal. You set the direction; Lyrea supports the work.
 
 This guide covers using an existing personal Workspace. Account creation and available services depend on the setup you have access to.

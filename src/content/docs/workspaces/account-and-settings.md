@@ -6,7 +6,7 @@ Your account settings and workspace settings do different jobs. Check which one 
 
 ## Your account
 
-Use **Account** settings for the personal account and security controls offered to you. If you cannot sign in, follow [Sign in to Sokra](../../start/sign-in/) instead.
+Use **Account** settings for the personal account and security controls offered to you. If you cannot sign in, follow [Sign in to Lyrea](../../start/sign-in/) instead.
 
 Use **Preferences** for your personal app settings, including the appearance options shown there. These settings do not change the organization's mode.
 

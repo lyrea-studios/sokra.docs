@@ -2,10 +2,11 @@
 title: Workspace modes
 description: Choose the language and learning defaults that fit your organization or personal practice.
 ---
+import organizationMode from '../../../assets/screenshots/organization-mode.jpg';
 import ProductScreenshot from '../../../components/ProductScreenshot.astro';
 import workspaceMode from '../../../assets/screenshots/workspace-mode.jpg';
 
-Sokra has four workspace modes. Mode shapes the terms, starting settings, and learning focus you see. It is separate from each person's role and access.
+Lyrea has four workspace modes. Mode shapes the terms, starting settings, and learning focus you see. It is separate from each person's role and access.
 
 | Mode | Use it for | Terms you may see |
 | --- | --- | --- |
@@ -28,10 +29,12 @@ Workspace owners and admins can change it:
 
 If the controls are disabled, ask an owner or admin. Changing the mode does not grant new management rights.
 
+<ProductScreenshot src={organizationMode} lang="en" alt="Organization mode set to Enterprise." caption="The organization mode control in a German demo workspace." />
+
 <ProductScreenshot
   src={workspaceMode}
-  alt="Organization mode set to Enterprise, with employee onboarding, role and skill development, and team training selected as use cases."
-  caption="Enterprise mode in a demo workspace's German settings. The controls below it let you choose several use cases."
+  alt="Use cases with employee onboarding, role and skill development, and team training selected."
+  caption="Use cases in a demo workspace's German settings. You can choose several at once."
 />
 
 ## Choose use cases
