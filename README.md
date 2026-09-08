@@ -18,11 +18,10 @@ The Pages workflow builds and checks pull requests and pushes. After Pages is
 enabled, set the repository variable `DOCS_PAGES_ENABLED=true`. A push to `main`
 or a manual workflow run then publishes the checked `dist/` artifact. Until
 that variable is set, CI only builds and checks. In repository Settings → Pages,
-use **GitHub Actions** as the source. The current organization's
-plan rejects Pages for this private source repo. Publication is pending the
-owner's choice: make only this docs repo public, or keep it private and choose
-another host. No visibility change is automatic. Never make the internal Sokra
-repository public to enable Pages.
+use **GitHub Actions** as the source. This docs-only repository is public with
+the owner's approval because the current plan requires it for Pages. The app
+and internal Sokra repositories remain private. The public site is served at
+https://lyrea-studios.github.io/sokra.docs/.
 
 The workflow gets the real URL from `actions/configure-pages`, so a later
 custom domain also changes the base path correctly. For a local custom-domain
