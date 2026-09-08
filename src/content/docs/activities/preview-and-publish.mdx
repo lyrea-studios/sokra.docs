@@ -2,6 +2,9 @@
 title: Preview and publish
 description: Check the learner experience and publish a ready activity.
 ---
+import ProductScreenshot from '../../../components/ProductScreenshot.astro';
+import activityPreview from '../../../assets/screenshots/activity-preview.jpg';
+
 Start with a saved activity draft that you can edit.
 
 ## Preview the learner experience
@@ -14,6 +17,12 @@ Open the activity's preview and work through it as a learner. Check:
 - Tasks and feedback behave as you expect.
 
 An author preview uses separate preview state. It does not count as a learner's real attempt.
+
+<ProductScreenshot
+  src={activityPreview}
+  alt="Learner preview start card for a sample SAP work-order activity, with its title, purpose, and Start now button."
+  caption="The opening card in a real author preview. This German demo describes a synthetic SAP exercise; Jetzt starten means Start now."
+/>
 
 ## Publish a ready draft
 

@@ -2,6 +2,9 @@
 title: Create an activity
 description: Build a draft around what learners should be able to do.
 ---
+import ProductScreenshot from '../../../components/ProductScreenshot.astro';
+import activityStudio from '../../../assets/screenshots/activity-studio.jpg';
+
 You need access to create activities in the selected workspace. If **New Activity** is missing, ask a workspace admin to check your access.
 
 ## Start a draft
@@ -15,6 +18,12 @@ You need access to create activities in the selected workspace. If **New Activit
 For example, use “Handle a customer complaint using our escalation rules” for workplace practice, or “Compare two sources and explain which evidence supports a claim” for academic work. Plan a task where the learner demonstrates that skill.
 
 The Studio uses your workspace's [mode](../../workspaces/modes/) for terms and starting settings. Goals may be called competencies or learning objectives. Check the settings before you publish, even when a default seems right.
+
+<ProductScreenshot
+  src={activityStudio}
+  alt="Activity Studio in Enterprise mode, showing the Overview, Materials, Competencies, Training path, Support and AI, and Readiness check sections."
+  caption="A saved demo activity in the German Enterprise Studio. This example is already published, so its fields are read-only. Bearbeitbaren Entwurf erstellen means Create editable draft."
+/>
 
 ## Check AI suggestions
 

@@ -14,7 +14,7 @@ Use **Preferences** for your personal app settings, including the appearance opt
 
 Workspace owners and admins can manage the organization settings offered to them:
 
-- **General:** Workspace details, [organization mode](../modes/), and use cases.
+- **Workspace profile** (or **General**): Workspace details, [organization mode](../modes/), and use cases.
 - **Access & Login:** The access and sign-in options configured for the organization.
 - **Learning & AI:** The learning and AI policies offered for the workspace.
 

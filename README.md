@@ -48,7 +48,7 @@ when only a page's title changes.
 - Check the shipped UI and behavior. Internal plans alone are not proof.
 - Use English for this first set. App links label the guide language; add full
   locale sections when translations are ready, without changing English paths.
-- Use public or demo-only screenshots with no real student or school data.
+- Use public or demo-only screenshots with no private organization or personal data.
 - Product & Learning owns guide clarity; Engineering owns site and link health.
   A feature change includes its guide update and review of claims about access,
   saving, publishing, and learner progress.
@@ -58,3 +58,10 @@ modes, plus their shared tasks. Mode and use-case wording is checked against the
 workspace settings and mode profiles. Personal guidance covers use of an existing
 Workspace, not subscription or general availability claims. Validate guide
 wording against the target app release when deploying an older release.
+
+## Product images
+
+Use real product captures from a local demo workspace. Place each image beside
+the steps it explains, with alt text and a short caption. Use
+`src/components/ProductScreenshot.astro` for optimized images and full-size
+links; see `src/assets/screenshots/README.md` for capture sources and rules.
