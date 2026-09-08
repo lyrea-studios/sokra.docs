@@ -1,0 +1,29 @@
+---
+title: Create an activity
+description: Build a draft around what learners should be able to do.
+---
+You need access to create activities in the selected workspace. If **New Activity** is missing, ask a workspace admin to check your access.
+
+## Start a draft
+
+1. Choose your workspace, then select **New Activity** in the sidebar.
+2. In the Activity Studio, give the activity a clear name and describe who it is for.
+3. Add the learning goals. Write what a learner should be able to show by the end.
+4. Work through the Studio sections. Check the learning tasks, instructions, and how the work will be assessed.
+5. Add relevant source material when the activity needs it.
+
+For example, use “Handle a customer complaint using our escalation rules” for workplace practice, or “Compare two sources and explain which evidence supports a claim” for academic work. Plan a task where the learner demonstrates that skill.
+
+The Studio uses your workspace's [mode](../../workspaces/modes/) for terms and starting settings. Goals may be called competencies or learning objectives. Check the settings before you publish, even when a default seems right.
+
+## Check AI suggestions
+
+Treat generated content as a draft. Read it for accuracy, level, and fit with your group. Change or remove tasks that do not help learners meet the goal.
+
+## Make sure your work is saved
+
+The Studio saves draft changes and shows the save state. Wait for it to show that the draft is saved before leaving. If it shows an error or a conflict, follow that message before closing the page.
+
+Creating a draft does not assign it to learners.
+
+[Next: Preview and publish](../preview-and-publish/)

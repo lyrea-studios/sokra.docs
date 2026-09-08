@@ -1,0 +1,28 @@
+---
+title: Review learner progress
+description: Open assigned work and use the saved evidence to plan your next step.
+---
+You need permission to review the activity or space. Access to broader workspace reports may require an admin role.
+
+## Open the right work
+
+1. Open the space where you assigned the activity.
+2. Open the activity's **Review** view.
+3. Choose the learner's work you want to inspect.
+4. Read the saved responses and available progress evidence.
+
+Use the space context when the same activity is assigned to more than one group. That keeps the review tied to the group you meant to check.
+
+## Read progress with care
+
+Your mode shapes the review terms: **mastery** in School, **readiness** in Enterprise, **proficiency** in Higher Education, and **progress** in a personal Workspace.
+
+Look at the learner's actual response alongside the goal and any help they used. A finished task and an independently demonstrated skill tell you different things.
+
+If there is little or no evidence, check that the learner started the assigned activity and that you are looking at the right space and attempt. Do not treat an empty record as proof that a learner cannot do the work.
+
+## Plan what comes next
+
+Use the work to choose a follow-up question, a fresh task, or a conversation with the learner. Review opens saved work without adding answers to the learner's attempt.
+
+[Related: Assign an activity](../assign-activity/)

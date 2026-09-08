@@ -1,0 +1,28 @@
+---
+title: Your first steps
+description: Find the right workspace and choose your first task in Sokra.
+---
+Start with the workspace where you want to learn or create. If you are joining an organization, use the account it invited.
+
+## 1. Sign in
+
+Open [Sokra](https://app.sokra.io) or your invitation link. Use your usual account or your organization's sign-in method. If you cannot get in, follow [Sign in to Sokra](../sign-in/).
+
+## 2. Check your workspace
+
+Check the workspace name in the sidebar. If you belong to more than one workspace, use the workspace menu to switch. Each workspace has its own people and content.
+
+## 3. Know your mode
+
+Sokra has **School**, **Enterprise**, **Higher Education**, and **Workspace** modes. Workspace is the personal mode for self-directed learning. [Compare the modes](../../workspaces/modes/) to see what each changes.
+
+## 4. Choose your next step
+
+- **Learning on your own:** Start with the [personal Workspace guide](../../modes/personal/).
+- **Learning with an organization:** Open your team, course, or class space and [start an assigned activity](../../learners/start-and-continue/).
+- **Creating for others:** [Create an activity](../../activities/create-activity/), then preview it before sharing.
+- **Managing a workspace:** Check [workspaces and spaces](../../workspaces/workspaces-and-spaces/) and [mode settings](../../workspaces/modes/).
+
+## If your home looks empty
+
+Check your account and chosen workspace. For shared work, the person who assigned it or your workspace admin can check access. In a personal Workspace, an empty view may simply mean you have not added work yet.

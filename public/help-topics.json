@@ -1,0 +1,20 @@
+{
+  "home": "",
+  "quickStart": "start/quick-start/",
+  "signIn": "start/sign-in/",
+  "createActivity": "activities/create-activity/",
+  "publishActivity": "activities/preview-and-publish/",
+  "assignActivity": "activities/assign-activity/",
+  "reviewProgress": "activities/review-progress/",
+  "materials": "activities/materials/",
+  "learning": "learners/start-and-continue/",
+  "learnerHelp": "learners/get-help/",
+  "workspaces": "workspaces/workspaces-and-spaces/",
+  "troubleshooting": "help/troubleshooting/",
+  "modes": "workspaces/modes/",
+  "settings": "workspaces/account-and-settings/",
+  "schoolMode": "modes/school/",
+  "enterpriseMode": "modes/enterprise/",
+  "higherEducationMode": "modes/higher-education/",
+  "personalMode": "modes/personal/"
+}
