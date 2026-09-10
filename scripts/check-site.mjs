@@ -24,15 +24,19 @@ for (const file of files) {
   let redirect = false;
   function visit(node) {
     const attrs = Object.fromEntries((node.attrs || []).map(({ name, value }) => [name, value]));
-    if (attrs.id) ids.add(attrs.id);
-    if (node.tagName === 'title') title = node.childNodes?.some(child => child.value?.trim());
-    if (node.tagName === 'meta' && attrs.name === 'description' && attrs.content) description = true;
-    if (node.tagName === 'meta' && attrs['http-equiv']?.toLowerCase() === 'refresh') redirect = true;
-    for (const attr of ['href', 'src']) {
+    const { id, href, src, name, content } = attrs;
+    const tagName = node.tagName;
+    if (id) ids.add(id);
+    if (tagName === 'title') title = node.childNodes?.some(child => child.value?.trim());
+    if (tagName === 'meta') {
+      if (name === 'description' && content) description = true;
+      if (attrs['http-equiv']?.toLowerCase() === 'refresh') redirect = true;
+    }
+    for (const value of [href, src]) {
       // The host serves 404.html at any missing URL; its synthetic canonical
       // is not a navigable guide. Still check every real link on that page.
-      if (file === '404.html' && node.tagName === 'link' && attrs.rel === 'canonical') continue;
-      if (attrs[attr]) links.push({ from: file, url: new URL(attrs[attr], url) });
+      if (file === '404.html' && tagName === 'link' && attrs.rel === 'canonical') continue;
+      if (value) links.push({ from: file, url: new URL(value, url) });
     }
     for (const child of node.childNodes || []) visit(child);
   }
