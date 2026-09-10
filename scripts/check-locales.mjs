@@ -12,6 +12,8 @@ const localePrefixes = { en: '', de: 'de/', es: 'es/' };
 const sourceFiles = (await readdir(source, { recursive: true })).filter(file => /\.mdx?$/.test(file));
 const slugs = sourceFiles.filter(file => !/^(de|es)\//.test(file)).map(file => file.replace(/\.mdx?$/, '')).sort();
 const attrsOf = node => Object.fromEntries((node.attrs || []).map(({ name, value }) => [name, value]));
+const accessibleAttributes = ['alt', 'aria-label', 'title'];
+const ignoredTags = new Set(['script', 'style']);
 const routeOf = slug => slug === 'index' ? '' : slug + '/';
 let figures = 0;
 let checked = 0;
@@ -34,13 +36,14 @@ for (const [locale, prefix] of Object.entries(localePrefixes)) {
     const accessibleText = [];
     const assetUrls = [];
     function walk(node, inContent = false, inFigure = false) {
-      if (['script', 'style'].includes(node.tagName)) return;
+      if (ignoredTags.has(node.tagName)) return;
       const attrs = attrsOf(node);
+      const classes = (attrs.class || '').split(' ');
       if (node.tagName === 'html') htmlLang = attrs.lang;
       if (node.nodeName === '#text') visibleText.push(node.value);
-      for (const key of ['alt', 'aria-label', 'title']) if (attrs[key]) accessibleText.push(attrs[key]);
-      inContent ||= (attrs.class || '').split(' ').includes('sl-markdown-content');
-      inFigure ||= node.tagName === 'figure' && (attrs.class || '').includes('product-screenshot');
+      for (const key of accessibleAttributes) if (attrs[key]) accessibleText.push(attrs[key]);
+      inContent ||= classes.includes('sl-markdown-content');
+      inFigure ||= node.tagName === 'figure' && classes.includes('product-screenshot');
       if (node.tagName === 'figure' && inFigure) count++;
       if (node.tagName === 'option' && attrs.value?.startsWith('/')) {
         languageOptions.add(attrs.value);
