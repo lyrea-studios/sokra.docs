@@ -25,7 +25,7 @@ export default defineConfig({
     favicon: '/favicon-32x32.png',
     customCss: ['./src/styles/custom.css'],
     components: { Head: './src/components/Head.astro', LanguageSelect: './src/components/LanguageSelect.astro' },
-    social: [{ icon: 'external', label: 'Lyrea', href: 'https://app.sokra.io' }],
+    social: [{ icon: 'external', label: 'Lyrea', href: 'https://app.klarisma.de' }],
     sidebar: [
       { label: 'Start here', translations: { de: 'Erste Schritte', es: 'Primeros pasos' }, items: [
         { label: 'Welcome', translations: { de: 'Willkommen', es: 'Bienvenida' }, slug: '' },

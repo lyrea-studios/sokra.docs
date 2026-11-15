@@ -14,7 +14,7 @@ If the invite has expired or no longer works, ask the sender for a new one.
 
 ## Sign in again
 
-Open [Lyrea](https://app.sokra.io). Choose the sign-in method offered for your account. Your organization may use an organization login provider or an email and password.
+Open [Lyrea](https://app.klarisma.de). Choose the sign-in method offered for your account. Your organization may use an organization login provider or an email and password.
 
 Use the same method you used before. Signing in with a different email can open an account without your group work.
 
