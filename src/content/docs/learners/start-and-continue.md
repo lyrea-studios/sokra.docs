@@ -7,7 +7,7 @@ Use your own account so your work belongs to you.
 ## Start shared work
 
 1. Sign in and choose your organization's workspace.
-2. Find the activity under **Next up** on your home page, under **My learning** in the sidebar, or through the link the person guiding your learning shared.
+2. Find the activity under **Next up** on your home page, under **Activities** in the sidebar, in your group's space, or through the link the person guiding your learning shared.
 3. Open the activity and read its overview.
 4. Select **Start now** when you are ready.
 5. Read the task and use its answer controls to respond.
