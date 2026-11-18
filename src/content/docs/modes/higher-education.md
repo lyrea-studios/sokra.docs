@@ -6,7 +6,7 @@ Use Higher Education mode for courses, seminars, and academic work. It uses term
 
 ## Build a module
 
-1. Check **Higher Education** in [mode settings](../../workspaces/modes/).
+1. Check that your workspace uses **Higher Education** as its [organization type](../../workspaces/modes/).
 2. Choose relevant use cases: course and seminar delivery, research methods and lab, or thesis and capstone supervision.
 3. [Create an activity](../../activities/create-activity/) with the course level, prior knowledge, and learning objectives.
 4. Add the readings, papers, or other source material learners should use.

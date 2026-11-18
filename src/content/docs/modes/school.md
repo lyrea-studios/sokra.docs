@@ -6,7 +6,7 @@ Use School mode for classroom teaching and student practice. It uses terms such 
 
 ## Plan a classroom activity
 
-1. Check **School** in [mode settings](../../workspaces/modes/).
+1. Check that your workspace uses **School** as its [organization type](../../workspaces/modes/).
 2. Select the use cases that fit: classroom teaching, homework and practice, exam preparation, or language teaching.
 3. [Create an activity](../../activities/create-activity/) with a clear learning goal and suitable level.
 4. Check that the instructions, materials, and help fit your students.
