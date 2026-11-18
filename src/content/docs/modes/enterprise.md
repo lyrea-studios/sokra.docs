@@ -1,14 +1,14 @@
 ---
-title: Enterprise
+title: Business
 description: Build workplace practice around roles, skills, and real source material.
 ---
-Use Enterprise mode for workplace learning. It frames work around competencies, training modules, cohorts, and readiness.
+Use Business mode for workplace learning. It frames work around competencies, training modules, cohorts, and readiness.
 
 ## Start with a real work task
 
 Choose one task someone should be able to do, such as handling a customer escalation or diagnosing a common fault.
 
-1. Check that your workspace uses **Enterprise** in [mode settings](../../workspaces/modes/).
+1. Check that your workspace uses **Business** as its [organization type](../../workspaces/modes/).
 2. Select relevant use cases: employee onboarding, compliance and policy, role and skill development, or team coaching.
 3. [Create an activity](../../activities/create-activity/) with the role, work context, and target competency.
 4. Add trusted materials such as your process guide or product manual.

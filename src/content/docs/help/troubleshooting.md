@@ -6,7 +6,7 @@ Start with the message shown in the app. It often tells you what to do next.
 
 ## I cannot sign in
 
-Use the same email and sign-in method you used before. For an organization login, ask your organization admin. For an email-and-password account, use password reset. See [Sign in to Lyrea](../../start/sign-in/).
+Use the same email and sign-in method you used before. For an organization login, ask your organization admin. For an email-and-password account, use password reset. See [Sign in to Klarisma](../../start/sign-in/).
 
 ## My workspace, space, or activity is missing
 
@@ -18,11 +18,11 @@ Check that the latest changes are saved. Read the Studio's readiness messages an
 
 ## The words or starting settings look wrong
 
-Check the selected workspace and its [mode](../../workspaces/modes/). Mode changes terms and defaults; your role controls access. A workspace owner or admin can change the mode and use cases in general settings.
+Check the selected workspace and its [mode](../../workspaces/modes/). Mode changes terms and defaults; your role controls access. A workspace owner or admin can change the organization type and use cases under **Settings** › **General**.
 
 ## A save or upload has an error
 
-Keep the page open and check your connection. Follow the retry or recovery option shown. If a draft has a conflict, resolve it before leaving or trying to publish. Avoid refreshing while you have unsaved work.
+Keep the page open and check your connection. Follow the retry or recovery option shown. If the Studio shows **Save conflict**, select **Reload saved draft** before you continue or publish. Avoid refreshing while you have unsaved work.
 
 ## My learner sees an older version
 
@@ -30,7 +30,7 @@ Check which version the assignment uses. A pinned assignment keeps its chosen ve
 
 ## I need more help
 
-Use **Feedback & Support** in the app sidebar. Include:
+Open **Help & Learning** in the sidebar and choose **Questions and feedback**. Include:
 
 - What you were trying to do.
 - The activity or page name.

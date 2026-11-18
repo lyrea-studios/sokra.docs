@@ -9,7 +9,7 @@ const output = path.join(root, 'dist');
 const base = new URL(process.env.DOCS_SITE_URL || 'https://lyrea-studios.github.io/sokra.docs/');
 base.pathname = base.pathname.replace(/\/+$/, '') + '/';
 const localePrefixes = { en: '', de: 'de/', es: 'es/' };
-const sourceFiles = (await readdir(source, { recursive: true })).filter(file => /\.mdx?$/.test(file));
+const sourceFiles = (await readdir(source, { recursive: true })).map(file => file.split(path.sep).join('/')).filter(file => /\.mdx?$/.test(file));
 const slugs = sourceFiles.filter(file => !/^(de|es)\//.test(file)).map(file => file.replace(/\.mdx?$/, '')).sort();
 const attrsOf = node => Object.fromEntries((node.attrs || []).map(({ name, value }) => [name, value]));
 const accessibleAttributes = ['alt', 'aria-label', 'title'];
@@ -32,6 +32,7 @@ for (const [locale, prefix] of Object.entries(localePrefixes)) {
     let htmlLang;
     let count = 0;
     let selectedLanguage;
+    let pageTitle = '';
     const visibleText = [];
     const accessibleText = [];
     const assetUrls = [];
@@ -42,6 +43,9 @@ for (const [locale, prefix] of Object.entries(localePrefixes)) {
       if (node.tagName === 'html') htmlLang = attrs.lang;
       if (node.nodeName === '#text') visibleText.push(node.value);
       for (const key of accessibleAttributes) if (attrs[key]) accessibleText.push(attrs[key]);
+      // Titles, descriptions and Open Graph tags show up in search results and link previews.
+      if (node.tagName === 'meta' && attrs.content && /^(?:description|(?:og|twitter):(?:title|description|site_name))$/.test(attrs.name || attrs.property || '')) accessibleText.push(attrs.content);
+      if (node.tagName === 'title' && !pageTitle) pageTitle = node.childNodes?.map(child => child.value).join('');
       inContent ||= classes.includes('sl-markdown-content');
       inFigure ||= node.tagName === 'figure' && classes.includes('product-screenshot');
       if (node.tagName === 'figure' && inFigure) count++;
@@ -74,7 +78,8 @@ for (const [locale, prefix] of Object.entries(localePrefixes)) {
     assert.deepEqual([...languageOptions].sort(), expectedOptions.sort(), `Wrong language links: ${route}`);
     // HTML selects the first option when none has an explicit selected attribute.
     assert.equal(selectedLanguage ?? [...languageOptions][0], pageUrl.pathname, `Wrong selected language: ${route}`);
-    assert(!/\bsokra(?:s|'s)?\b/i.test([...visibleText, ...accessibleText].join(' ')), `Old visible brand: ${route}`);
+    assert(!/\b(?:sokra|lyrea)(?:s|'s)?\b/i.test([...visibleText, ...accessibleText].join(' ')), `Old visible brand: ${route}`);
+    assert(/\bKlarisma\b/.test(pageTitle), `Title without Klarisma: ${route}`);
     const text = visibleText.join(' ');
     assert(!/This content is not available in your language yet|Dieser Inhalt ist noch nicht|Este contenido aún no/.test(text), `Translation fallback: ${route}`);
     if (locale === 'en') imageCounts.set(slug, count);
@@ -89,5 +94,5 @@ for (const [locale, prefix] of Object.entries(localePrefixes)) {
   }
 }
 assert.equal(slugs.length, 18, 'Expected home and all seventeen guides in each language');
-assert(figures >= 27, 'Expected nine screenshots per language');
-console.log(`PASS: ${checked} translated pages, ${figures} screenshot figures, language switches, local links, source parity, and Lyrea branding.`);
+assert(figures >= 21, 'Expected seven screenshots per language');
+console.log(`PASS: ${checked} translated pages, ${figures} screenshot figures, language switches, local links, source parity, and Klarisma branding.`);
