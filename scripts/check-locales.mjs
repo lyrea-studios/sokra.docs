@@ -45,7 +45,7 @@ for (const [locale, prefix] of Object.entries(localePrefixes)) {
       for (const key of accessibleAttributes) if (attrs[key]) accessibleText.push(attrs[key]);
       // Titles, descriptions and Open Graph tags show up in search results and link previews.
       if (node.tagName === 'meta' && attrs.content && /^(?:description|(?:og|twitter):(?:title|description|site_name))$/.test(attrs.name || attrs.property || '')) accessibleText.push(attrs.content);
-      if (node.tagName === 'title') pageTitle = node.childNodes?.map(child => child.value).join('');
+      if (node.tagName === 'title' && !pageTitle) pageTitle = node.childNodes?.map(child => child.value).join('');
       inContent ||= classes.includes('sl-markdown-content');
       inFigure ||= node.tagName === 'figure' && classes.includes('product-screenshot');
       if (node.tagName === 'figure' && inFigure) count++;
