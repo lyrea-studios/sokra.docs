@@ -17,15 +17,15 @@ export default defineConfig({
     '/schools/workspaces-and-spaces/': '/workspaces/workspaces-and-spaces/',
   }).map(([from, to]) => [from, siteUrl.pathname.replace(/\/$/, '') + to])),
   integrations: [starlight({
-    title: { en: 'Lyrea Docs', de: 'Lyrea Handbuch', es: 'Guías de Lyrea' },
-    description: 'Clear guides for learning, training, and teaching with Lyrea.',
+    title: { en: 'Klarisma Docs', de: 'Klarisma Handbuch', es: 'Guías de Klarisma' },
+    description: 'Clear guides for learning, training, and teaching with Klarisma.',
     defaultLocale: 'root',
     locales: { root: { label: 'English', lang: 'en' }, de: { label: 'Deutsch', lang: 'de' }, es: { label: 'Español', lang: 'es' } },
     logo: { src: './src/assets/logo.png', replacesTitle: false },
     favicon: '/favicon-32x32.png',
     customCss: ['./src/styles/custom.css'],
     components: { Head: './src/components/Head.astro', LanguageSelect: './src/components/LanguageSelect.astro' },
-    social: [{ icon: 'external', label: 'Lyrea', href: 'https://app.klarisma.de' }],
+    social: [{ icon: 'external', label: 'Klarisma', href: 'https://app.klarisma.de' }],
     sidebar: [
       { label: 'Start here', translations: { de: 'Erste Schritte', es: 'Primeros pasos' }, items: [
         { label: 'Welcome', translations: { de: 'Willkommen', es: 'Bienvenida' }, slug: '' },
@@ -48,7 +48,7 @@ export default defineConfig({
         { slug: 'workspaces/modes' },
         { slug: 'workspaces/account-and-settings' },
       ] },
-      { label: 'Use Lyrea in your setting', translations: { de: 'Lyrea in deinem Umfeld', es: 'Lyrea en tu entorno' }, items: [
+      { label: 'Use Klarisma in your setting', translations: { de: 'Klarisma in deinem Umfeld', es: 'Klarisma en tu entorno' }, items: [
         { slug: 'modes/school' },
         { slug: 'modes/enterprise' },
         { slug: 'modes/higher-education' },

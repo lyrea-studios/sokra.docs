@@ -4,13 +4,13 @@
 
 - Maintain the Astro Starlight guides for School, Enterprise, Higher Education, and personal Workspace modes.
 - Keep all 18 pages complete in English, German, and Spanish with translated titles, navigation, alt text, captions, and language-stable relative links.
-- Keep the public topic map, app copy, redirects, heading anchors, Pagefind search, and Lyrea branding aligned.
-- Use only public or demo-only screenshots and keep internal Lyrea documentation outside the build.
+- Keep the public topic map, app copy, redirects, heading anchors, Pagefind search, and Klarisma branding aligned.
+- Use only public or demo-only screenshots and keep internal Klarisma documentation outside the build.
 
 ## Next
 
 - Run `npm run check` and `npm run build` before shipping; verify links, assets, metadata, locale parity, image parity, language switches, and source exclusion.
-- After topic-map changes, copy the map to the app and run `node scripts/check-app-links.mjs` from the Lyrea workspace.
+- After topic-map changes, copy the map to the app and run `node scripts/check-app-links.mjs` from the Klarisma workspace.
 
 ## Later
 

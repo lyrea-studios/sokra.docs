@@ -1,6 +1,6 @@
 # Product screenshots
 
-These JPEGs are direct browser captures from the local Lyrea demo app on
+These JPEGs are direct browser captures from the local Klarisma demo app on
 2026-09-08. They show synthetic demo content in German and dark mode. Captures
 exclude browser chrome, development badges, and unrelated workspace content. No
 image generation, mock UI, or private customer data is used.

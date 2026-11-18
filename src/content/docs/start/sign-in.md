@@ -1,8 +1,8 @@
 ---
-title: Sign in to Lyrea
+title: Sign in to Klarisma
 description: Use your own or your organization's account, accept an invite, and recover access.
 ---
-Use your Lyrea account for your own Workspace, or an account with access to your organization's workspace.
+Use your Klarisma account for your own Workspace, or an account with access to your organization's workspace.
 
 ## Use an invitation
 
@@ -14,7 +14,7 @@ If the invite has expired or no longer works, ask the sender for a new one.
 
 ## Sign in again
 
-Open [Lyrea](https://app.klarisma.de). Choose the sign-in method offered for your account. Your organization may use an organization login provider or an email and password.
+Open [Klarisma](https://app.klarisma.de). Choose the sign-in method offered for your account. Your organization may use an organization login provider or an email and password.
 
 Use the same method you used before. Signing in with a different email can open an account without your group work.
 

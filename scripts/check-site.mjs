@@ -7,7 +7,8 @@ const root = path.resolve(import.meta.dirname, '..');
 const output = path.join(root, 'dist');
 const base = new URL(process.env.DOCS_SITE_URL || 'https://lyrea-studios.github.io/sokra.docs/');
 base.pathname = base.pathname.replace(/\/+$/, '') + '/';
-const files = await readdir(output, { recursive: true });
+// Use / on every OS so route checks also work on Windows.
+const files = (await readdir(output, { recursive: true })).map(file => file.split(path.sep).join('/'));
 const pages = new Map();
 const links = [];
 
