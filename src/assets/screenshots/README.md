@@ -1,29 +1,48 @@
 # Product screenshots
 
-These JPEGs are direct browser captures from the local Klarisma demo app on
-2026-09-08. They show synthetic demo content in German and dark mode. Captures
-exclude browser chrome, development badges, and unrelated workspace content. No
-image generation, mock UI, or private customer data is used.
+Direct browser captures from the Klarisma staging app, taken on 2026-11-19 in a
+demo organization, "Nordwerk Logistik GmbH". Every person in it is invented
+(Clara Brandt, Malte Berger, Ines Kramer, Jan Fischer, Lea Sommer, Paul
+Winter). The accounts are username accounts without email addresses. The
+activity "Wareneingangsprüfung und Abweichungsdokumentation", its tasks and
+the uploaded materials are synthetic training content written for this demo.
+No customer data, real names, real email addresses or SAP content appear.
 
-| File | Product view | Notes |
+Each folder holds the same views in one app language: `de/`, `en/`, `es/`.
+Each guide uses the folder of its own language. The app runs in Business mode
+(organization type Business), light theme, at 1440 × 900 (desktop) or
+390 × 844 (phone, files ending in `-mobile`). The activity content stays
+German in all three languages, because the activity language is German.
+
+| File | Product view | Used in |
 | --- | --- | --- |
-| `materials-library.jpg` | Workspace → Materials → Organization | New collection and upload buttons, plus material search |
-| `new-collection.jpg` | Materials → New collection | Unsaved sample name “Einführung in SAP”; dialog was cancelled |
-| `activities-library.jpg` | Workspace → Activities | Three synthetic SAP activities; Katrin Weber is a seeded demo user |
-| `activity-preview.jpg` | Published activity → Author preview | Start card only; no learner attempt started |
-| `workspace-mode.jpg` | Settings → General → Use cases | Existing use-case choices; no settings changed |
-| `space-activities.jpg` | Team space → Activities | Space tabs and three synthetic SAP activities; seeded demo names only |
-| `space-review.jpg` | Team space → Review | Navigation and review heading only; the queue failed to load and is excluded. This capture does not show or validate assessment data |
+| `activities-library.jpg` | Activities › My activities (trainer) | Quick start |
+| `studio-frame.jpg` | Activity Studio, step Setup & material | Create an activity |
+| `activity-publish.jpg` | Activity Studio, Review & publish after publishing | Preview and publish |
+| `assign-audience.jpg` | Assign activity, step 1 | Assign an activity |
+| `activity-review.jpg` | Activity review with learner list | Review learner progress |
+| `review-decision.jpg` | Review of one learner's work: AI suggestion and decision (note typed, not sent) | Review and confirm learner work |
+| `part-grades.jpg` | Grades of the parts, one AI grade changed by the trainer | Review and confirm learner work |
+| `completion-settings.jpg` | Studio step Competencies & completion with details open | Set feedback and completion |
+| `materials-library.jpg` | Materials › collection with two files | Add and find materials |
+| `new-collection.jpg` | Materials › New collection (dialog cancelled) | Add and find materials |
+| `workspace-mode.jpg` | Settings › General › Usage | Workspace modes |
+| `space-activities.jpg` | Space › Activities | Workspaces and spaces |
+| `space-members.jpg` | Space › Members dialog | Roles and access |
+| `invite-members.jpg` | People with the Invite members menu | Invite and manage people |
+| `member-accounts.jpg` | People › Create member accounts (dialog empty) | Invite and manage people |
+| `my-learning.jpg` | My learning › Learning record (learner) | Understand My learning |
+| `review-requests.jpg` | My learning › Review requests with one sent request | Understand My learning |
+| `learner-home.jpg` | Learner home with Next up | Start and continue learning |
+| `learner-activity-mobile.jpg` | Activity overview on a phone | Start and continue learning |
 
-Use `ProductScreenshot.astro` for descriptive alt text, a short caption, and a
-full-size link. Astro builds a WebP for the guide and retains the source JPEG
-for the full-size view. Public builds do not include this README.
+Use `ProductScreenshot.astro` for alt text, a short caption, and a full-size
+link; add `narrow` for phone captures. Astro builds a WebP for the guide and
+keeps the JPEG for the full-size view. Public builds do not include this
+README.
 
-The seven captures appear across six guides in each of English, German, and
-Spanish. Alt text, captions, and full-size link labels match the guide language;
-the captured product UI remains German.
-
-When replacing a shot, use a local demo account, wait for the page to load,
-inspect every visible field, and capture only the relevant panel. Keep the
-image true to the product. Update its caption when labels or layout change, and
-remove a capture that shows controls the app no longer has.
+To replace a shot, use the same demo organization on staging, never a real
+workspace. The capture steps and the accounts are described in the Klarisma
+root repository (`company/docs/qa/playbooks/docs-demo-organization.md`).
+Check every visible field before you commit: no real names, emails, invite
+links or setup codes.
