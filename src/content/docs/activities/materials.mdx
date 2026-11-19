@@ -3,8 +3,8 @@ title: Add and find materials
 description: Keep source files in Materials and check when they are ready to use.
 ---
 import ProductScreenshot from '../../../components/ProductScreenshot.astro';
-import materialsLibrary from '../../../assets/screenshots/materials-library.jpg';
-import newCollection from '../../../assets/screenshots/new-collection.jpg';
+import materialsLibrary from '../../../assets/screenshots/en/materials-library.jpg';
+import newCollection from '../../../assets/screenshots/en/new-collection.jpg';
 
 Owners and admins use **Materials** in the sidebar to find and organize files for the workspace. If you manage a space, use its **Materials** tab instead. The files you can see depend on the workspace and your access.
 
@@ -15,11 +15,7 @@ Owners and admins use **Materials** in the sidebar to find and organize files fo
 3. Select **Upload** and choose your file.
 4. Keep the page open while the upload runs. Check the file's status when it finishes.
 
-<ProductScreenshot
-  src={materialsLibrary}
-  alt="New collection and Upload buttons above the materials search field."
-  caption="The collection, upload, and search controls. This demo uses the German UI: Neue Sammlung means New collection, and Hochladen means Upload."
-/>
+<ProductScreenshot src={materialsLibrary} alt="Materials collection with two uploaded text files that are ready." caption="A collection with uploaded files. Ready means activities can use the file." />
 
 The upload control shows which files it accepts. If a file is rejected, use the message shown to check its type or size.
 
@@ -31,11 +27,7 @@ A file can finish uploading while its content is still being prepared. Its statu
 
 Choose file and collection names that tell you what is inside, such as “River fieldwork — source texts.” Select **New collection**, enter a name, then select **Create** to group related materials.
 
-<ProductScreenshot
-  src={newCollection}
-  alt="New collection dialog with the sample name Einführung in SAP and Cancel and Create buttons."
-  caption="Give the collection a short, clear name. The sample name means Introduction to SAP; Erstellen means Create."
-/>
+<ProductScreenshot src={newCollection} alt="New collection dialog with a sample collection name." caption="Name the collection, then select Create. The dialog was cancelled for this screenshot." />
 
 Before using a file in an activity, open it and check that it is the right version.
 

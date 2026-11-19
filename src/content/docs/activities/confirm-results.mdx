@@ -1,0 +1,50 @@
+---
+title: Review and confirm learner work
+description: Check submitted work, confirm or change the AI grades, and decide the result.
+---
+import ProductScreenshot from '../../../components/ProductScreenshot.astro';
+import decisionShot from '../../../assets/screenshots/en/review-decision.jpg';
+import gradesShot from '../../../assets/screenshots/en/part-grades.jpg';
+
+Klarisma grades each submitted answer first. These grades are provisional. A trainer confirms or changes them and decides the final result, unless the activity lets Klarisma decide (see [Set feedback and completion](../feedback-and-completion/)).
+
+You need to be an admin of the space the activity is assigned to, or an owner or admin of the workspace.
+
+## Find work that needs you
+
+- **Owners and admins:** Open **Review** in the sidebar. Under **Needs attention**, select **Review submitted work**.
+- **Space admins:** Open your space and select the **Review** tab, or open the activity and select **Review**.
+- **On the home page:** Klarisma tells you when work is ready for review.
+
+The activity review lists each learner with a status such as **Needs review** and an evidence status such as **Provisional assessment**. Select **Review work** for the learner you want to check.
+
+## Read the AI suggestion and the evidence
+
+At the top, **AI suggestion** shows each goal with a provisional status, for example **Open** or **Contradictory**, and how many answers speak for or against it. Below, **Evidence** lists what each answer showed.
+
+## Confirm or change the grade of each part
+
+Under **Grades of the parts**, every answer has a grade: **Correct**, **Partly correct**, or **Not yet correct**. A label shows where the grade comes from:
+
+- **Answer key · fixed:** the answer was checked against a fixed solution.
+- **AI · provisional:** Klarisma graded the answer, for example a written explanation.
+
+Select **Confirm** when the grade fits the work. To change it, choose another grade and select **Save**. The answer then shows **Trainer · confirmed**, and the original AI grade stays visible next to it.
+
+<ProductScreenshot src={gradesShot} alt="Grades of the parts: answers with a grade menu, Confirm buttons, and one AI grade changed by the trainer." caption="Each answer has its own grade. Here the trainer changed an AI grade from Partly correct to Not yet correct. The activity content is German." />
+
+## Decide the result
+
+Under **Your decision**, choose **Complete** when the learner has shown the goals, or **Another attempt** when more work is needed. Klarisma marks its own suggestion with **AI suggestion**. Add a **Note to the learner (optional)** that helps with the next step, then select **Submit feedback**.
+
+<ProductScreenshot src={decisionShot} alt="Review page with the AI suggestion per goal, Another attempt selected, and a note to the learner." caption="The trainer asks for another attempt and adds a note. Submit feedback sends the decision." />
+
+The learner sees your decision and your note on the activity page. With **Another attempt**, the learner starts again and repeats the part that is still missing. If the activity holds feedback until a trainer has reviewed it, the learner gets feedback only after you submit.
+
+## Questions from learners
+
+Learners can ask for a review of a goal in **My learning**. Owners and admins answer these requests.
+
+Every time you open a learner's data, Klarisma logs it. The learner can see who opened it and when.
+
+[Related: Review learner progress](../review-progress/)

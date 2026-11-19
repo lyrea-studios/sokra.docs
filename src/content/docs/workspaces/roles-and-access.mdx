@@ -1,0 +1,47 @@
+---
+title: Roles and access
+description: See what owners, admins, space admins, and members can do.
+---
+import ProductScreenshot from '../../../components/ProductScreenshot.astro';
+import membersShot from '../../../assets/screenshots/en/space-members.jpg';
+
+Your role decides which tools you see. It is separate from the workspace [mode](../modes/). There are roles for the whole workspace and roles in each space.
+
+## Workspace roles
+
+| Role | Typical person | What they see |
+| --- | --- | --- |
+| **Owner** | Person responsible for the workspace | Everything admins see. New owners must be invited by email. |
+| **Admin** | Learning or HR team | Full sidebar: **Activities**, **Materials**, **Competencies** (or goals), **Learning packages**, **People**, **Review**, and **New Activity**. Organization settings. Only owners and admins create spaces. |
+| **Member** | Learners, and trainers without admin rights | **Activities**, **My learning**, and their spaces. |
+
+## Space roles
+
+Each space has its own members. The person who creates a space is its **Owner**. Everyone else gets a role when they are added:
+
+- **Admin:** manages the space. Trainers get this role.
+- **Member:** learns in the space.
+
+All workspace owners also have access to every space.
+
+<ProductScreenshot src={membersShot} alt="Members dialog of a space with the space owner, one admin, two members, and the visibility setting." caption="Members of a space and their roles. In Business mode, spaces are called teams." />
+
+## Trainers manage spaces
+
+A trainer is usually a workspace member with the **Admin** role in one or more spaces. In those spaces, trainers can:
+
+- add activities with **Add activity** and work in the Activity Studio,
+- use the space's **Materials**,
+- open the **Review** tab and [confirm learner work](../../activities/confirm-results/).
+
+They do not get organization settings or the full sidebar unless they are also a workspace admin. To make someone a trainer, see [Invite and manage people](../people/).
+
+## Who sees learner data
+
+Trainers see the learning results of the spaces they manage. Owners and admins can see learning results across the workspace. Learners' tutor chats are not shown to trainers or admins. Every access to a learner's data is logged, and the learner can see the log in **Settings** › **My account** › **Data & Privacy**.
+
+In **People**, each person also has a pseudonym.
+
+## Change a role
+
+Owners and admins change a workspace role in **People**. Space roles change in the space under **Members**. See [Invite and manage people](../people/).
