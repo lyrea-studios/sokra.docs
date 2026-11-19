@@ -1,0 +1,50 @@
+---
+title: "Revisar y confirmar el trabajo"
+description: "Revisa el trabajo entregado, confirma o cambia las notas de la IA y decide el resultado."
+---
+import ProductScreenshot from '../../../../components/ProductScreenshot.astro';
+import decisionShot from '../../../../assets/screenshots/es/review-decision.jpg';
+import gradesShot from '../../../../assets/screenshots/es/part-grades.jpg';
+
+Klarisma pone una primera nota a cada respuesta entregada. Esas notas son provisionales. Una persona formadora las confirma o las cambia y decide el resultado final, salvo que la actividad deje decidir a Klarisma (consulta [Definir comentarios y finalización](../feedback-and-completion/)).
+
+Necesitas ser administrador del espacio al que está asignada la actividad, o propietario o administrador del espacio de trabajo.
+
+## Encontrar el trabajo pendiente
+
+- **Propietarios y administradores:** Abre **Revisión** en la barra lateral. En **Requiere atención**, selecciona **Revisar el trabajo enviado**.
+- **Administradores de un espacio:** Abre tu espacio y selecciona la pestaña **Revisión**, o abre la actividad y selecciona **Revisión**.
+- **En la página de inicio:** Klarisma te avisa cuando hay trabajo listo para revisar.
+
+La revisión de la actividad muestra a cada estudiante con un estado como **Necesita revisión** y un estado de evidencia como **Evaluación provisional**. Selecciona **Revisar trabajo** en la persona que quieres revisar.
+
+## Leer la sugerencia de la IA y las evidencias
+
+Arriba, **Sugerencia de la IA** muestra cada objetivo con un estado provisional, por ejemplo **Abierto** o **Contradictorio**, y cuántas respuestas hablan a favor o en contra. Debajo, **Evidencias** recoge lo que mostró cada respuesta.
+
+## Confirmar o cambiar la nota de cada parte
+
+En **Notas de las partes**, cada respuesta tiene una nota: **Correcta**, **Parcialmente correcta** o **Aún no es correcta**. Una etiqueta indica de dónde viene la nota:
+
+- **Solución · nota fija:** la respuesta se comparó con una solución fija.
+- **IA · provisional:** Klarisma valoró la respuesta, por ejemplo una explicación escrita.
+
+Selecciona **Confirmar** si la nota se ajusta al trabajo. Para cambiarla, elige otra nota y selecciona **Guardar**. La respuesta muestra entonces **Formador · confirmada**, y la nota original de la IA sigue visible al lado.
+
+<ProductScreenshot src={gradesShot} lang="es" alt="Notas de las partes: respuestas con selector de nota, botones Confirmar y una nota de la IA cambiada por la formadora." caption="Cada respuesta tiene su propia nota. Aquí la formadora cambió una nota de la IA de Parcialmente correcta a Aún no es correcta. El contenido de la actividad está en alemán." />
+
+## Decidir el resultado
+
+En **Tu decisión**, elige **Completar** cuando la persona haya demostrado los objetivos, u **Otro intento** cuando haga falta más trabajo. Klarisma marca su propia sugerencia con **Sugerencia de la IA**. Añade una **Nota para la persona que aprende (opcional)** que ayude con el siguiente paso y selecciona **Enviar comentarios**.
+
+<ProductScreenshot src={decisionShot} lang="es" alt="Página de revisión con la sugerencia de la IA por objetivo, Otro intento seleccionado y una nota para la persona que aprende." caption="La formadora pide otro intento y añade una nota. Enviar comentarios envía la decisión." />
+
+La persona que aprende ve tu decisión y tu nota en la página de la actividad. Con **Otro intento**, empieza de nuevo y repite la parte que todavía falta. Si la actividad retiene los comentarios hasta que una persona formadora los revise, la persona los recibe solo cuando tú los envías.
+
+## Preguntas de estudiantes
+
+Los estudiantes pueden pedir la revisión de un objetivo en **Mi aprendizaje**. Los propietarios y administradores responden a estas solicitudes.
+
+Cada vez que abres los datos de aprendizaje de una persona, Klarisma lo registra. La persona puede ver quién los abrió y cuándo.
+
+[Relacionado: Revisar el progreso](../review-progress/)

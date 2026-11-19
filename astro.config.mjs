@@ -35,17 +35,22 @@ export default defineConfig({
       { label: 'Create and share', translations: { de: 'Erstellen und teilen', es: 'Crear y compartir' }, items: [
         { slug: 'activities/create-activity' },
         { slug: 'activities/preview-and-publish' },
+        { slug: 'activities/feedback-and-completion' },
         { slug: 'activities/assign-activity' },
         { slug: 'activities/review-progress' },
+        { slug: 'activities/confirm-results' },
         { slug: 'activities/materials' },
       ] },
       { label: 'Learn', translations: { de: 'Lernen', es: 'Aprender' }, items: [
         { slug: 'learners/start-and-continue' },
         { slug: 'learners/get-help' },
+        { slug: 'learners/my-learning' },
       ] },
       { label: 'Workspaces', translations: { de: 'Workspaces', es: 'Espacios de trabajo' }, items: [
         { slug: 'workspaces/workspaces-and-spaces' },
         { slug: 'workspaces/modes' },
+        { slug: 'workspaces/roles-and-access' },
+        { slug: 'workspaces/people' },
         { slug: 'workspaces/account-and-settings' },
       ] },
       { label: 'Use Klarisma in your setting', translations: { de: 'Klarisma in deinem Umfeld', es: 'Klarisma en tu entorno' }, items: [

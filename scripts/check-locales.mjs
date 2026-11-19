@@ -93,6 +93,6 @@ for (const [locale, prefix] of Object.entries(localePrefixes)) {
     checked++;
   }
 }
-assert.equal(slugs.length, 18, 'Expected home and all seventeen guides in each language');
+assert.equal(slugs.length, 23, 'Expected home and all twenty-two guides in each language');
 assert(figures >= 21, 'Expected seven screenshots per language');
 console.log(`PASS: ${checked} translated pages, ${figures} screenshot figures, language switches, local links, source parity, and Klarisma branding.`);
